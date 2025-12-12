@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Pawfect Picks</title>
+    <style>
+        /* Reusing consistent CSS */
+        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background-color: #F8F8F8; color: #333; }
+        .header { background-color: #4CAF50; color: white; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .logo { font-size: 24px; font-weight: bold; }
+        .nav a { color: white; text-decoration: none; margin-left: 20px; font-size: 16px; transition: color 0.3s; }
+        .nav a:hover { color: #FFD700; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .footer { background-color: #333; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+        h2 { color: #4CAF50; }
+        
+        /* Search specific styles */
+        .search-container { 
+            text-align: center; 
+            margin-bottom: 40px; 
+            padding: 30px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+        .search-input {
+            width: 70%;
+            padding: 12px 20px;
+            border: 2px solid #4CAF50; 
+            border-radius: 50px 0 0 50px;
+            font-size: 16px;
+            outline: none;
+        }
+        .search-button {
+            padding: 12px 25px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 0 50px 50px 0;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            margin-left: -5px;
+        }
+        .search-button:hover {
+            background-color: #3e8e41;
+        }
+        
+        /* Results grid style */
+        .product-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 20px; 
+            margin-top: 20px; 
+        }
+        .product-card { 
+            background-color: white; 
+            padding: 15px; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+            text-align: center;
+        }
+        .product-card img { 
+            width: 100%; 
+            height: auto; 
+            border-radius: 4px; 
+        }
+        .product-card a { color: #FFD700; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">🐶 Pawfect Picks</div>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="categories.html">Shop by Category</a>
+            <a href="search.html">Search</a>
+            <a href="cart.html">Cart (0)</a>
+            <a href="orders.html">Your Orders</a>
+            <a href="profile.html">Profile</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </div>
+
+    <div class="container">
+        
+        <div class="search-container">
+            <h2>🔎 Find Your Pawfect Match</h2>
+            <form action="#" method="GET">
+                <input type="text" class="search-input" name="query" placeholder="Search for food, toys, beds, and more..." required>
+                <button type="submit" class="search-button">Search</button>
+            </form>
+        </div>
+
+        <section class="search-results">
+            <h3>Results for "Chew Toy" (3 Items)</h3>
+            <p style="color: #666;">Showing the best picks for durability and fun!</p>
+            
+            <div class="product-grid">
+                
+                <div class="product-card">
+                    
+                    <h3>Squeaky Rubber Chicken</h3>
+                    <p>Hilarious, durable fun for light chewers.</p>
+                    <p style="font-size: 1.2em; color: #4CAF50; font-weight: bold;">$12.99</p>
+                    <a href="product-detail.html">View Product</a>
+                </div>
+                
+                <div class="product-card">
+                    
+                    <h3>Braided Tug-of-War Rope</h3>
+                    <p>Perfect for interactive play and dental cleaning.</p>
+                    <p style="font-size: 1.2em; color: #4CAF50; font-weight: bold;">$18.50</p>
+                    <a href="product-detail.html">View Product</a>
+                </div>
+                
+                <div class="product-card">
+                    
+                    <h3>Rubber Treat Dispenser Ball</h3>
+                    <p>Keeps your dog busy and mentally stimulated.</p>
+                    <p style="font-size: 1.2em; color: #4CAF50; font-weight: bold;">$9.95</p>
+                    <a href="product-detail.html">View Product</a>
+                </div>
+            </div>
+        </section>
+
+        <section style="margin-top: 40px; text-align: center;">
+            <p>Can't find what you need? <a href="contact.html" style="color: #4CAF50; font-weight: bold;">Contact us!</a></p>
+        </section>
+        
+    </div>
+
+    <div class="footer">
+        &copy; 2025 Pawfect Picks. All rights reserved. | <a href="contact.html" style="color: white;">Contact</a>
+    </div>
+
+</body>
+</html>
